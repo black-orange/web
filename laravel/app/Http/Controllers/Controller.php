@@ -11,3 +11,15 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
+
+class TokenController extends BaseController
+{
+	public function ParseToken()
+	{
+		$signature = Input::get('signature', 'default signature');
+		$echostr = Input::get('echostr', 'abc');
+
+		print($signature);
+		print($echostr);
+	}
+}

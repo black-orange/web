@@ -19,6 +19,4 @@ Route::get('/hello', function () {
 	return "Hi there";
 });
 
-Route::get('/token', function () {
-	print("fxxk you guys");
-});
+Route::get('/token', 'TokenController@ParseToken');
