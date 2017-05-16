@@ -19,7 +19,7 @@ Route::get('/hello', function () {
 	return "Hi there";
 });
 
-Route::get('/token/{signature?}', function ($signature) {
+Route::get('/token{signature?}', function ($signature) {
 	//return "qiango3107";
 	//_GET["signature"];
     //_GET["timestamp"];
