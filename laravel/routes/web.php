@@ -19,12 +19,6 @@ Route::get('/hello', function () {
 	return "Hi there";
 });
 
-Route::get('/token?echostr={eb?}', function ($eb) {
-	//return "qiango3107";
-	//_GET["signature"];
-    //_GET["timestamp"];
-    //_GET["nonce"];
-    //_GET["echostr"];
-
-    print($eb);
+Route::get('/token', function () {
+	print("fxxk you guys");
 });
