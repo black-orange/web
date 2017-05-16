@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/hello', function () {
 	return "Hi there";
 });
+
+Route::get('/token', function () {
+	return "qiango3107";
+});
