@@ -14,6 +14,6 @@ class TokenController extends BaseController
 
 		print($signature);
 		print($echostr);
-		return $echostr
+		return $echostr;
 	}
 }
