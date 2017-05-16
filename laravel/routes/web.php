@@ -19,12 +19,12 @@ Route::get('/hello', function () {
 	return "Hi there";
 });
 
-Route::get('/token', function () {
+Route::get('/token/{echostr}', function ($echostr) {
 	//return "qiango3107";
-	_GET["signature"];
-    _GET["timestamp"];
-    _GET["nonce"];
-    _GET["echostr"];
+	//_GET["signature"];
+    //_GET["timestamp"];
+    //_GET["nonce"];
+    //_GET["echostr"];
 
-    print(echostr);
+    print($echostr);
 });
