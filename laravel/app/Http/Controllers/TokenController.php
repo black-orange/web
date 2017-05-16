@@ -9,14 +9,15 @@ class TokenController extends BaseController
 {
 	public function ParseToken()
 	{
-		traceHttp();
+		//traceHttp();
 		$signature = Input::get('signature', 'default signature');
 		$echostr = Input::get('echostr', 'abc');
 
 		//print($signature);
 		//print($echostr);
-		return response($echostr, 200)
-						->header('Content-Type', 'text/plain');
+		echo $echostr;
+		//return response($echostr, 200)
+		//				->header('Content-Type', 'text/plain');
 	}
 }
 
