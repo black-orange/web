@@ -20,5 +20,11 @@ Route::get('/hello', function () {
 });
 
 Route::get('/token', function () {
-	return "qiango3107";
+	//return "qiango3107";
+	_GET["signature"];
+    _GET["timestamp"];
+    _GET["nonce"];
+    _GET["echostr"];
+
+    print(echostr);
 });
