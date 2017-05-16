@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\TokenController;
 
+use Illuminate\Routing\Controller as BaseController;
+
 class TokenController extends BaseController
 {
 	public function ParseToken()
